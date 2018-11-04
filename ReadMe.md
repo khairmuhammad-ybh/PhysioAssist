@@ -1,7 +1,7 @@
 # PHYSIOASSIST
 
 When people undergo surgery, they would have to rest for a period, especially the elderly, during this 
-resting period that would usually last (insert time) weeks, and they would lose strength. To fix this
+resting period that would usually last few weeks, and they would lose strength. To fix this
 physiotherapist will be called in to help patients recover their lost muscles and strength through routine
 exercises daily, in order to free up time for physiotherapist to see more patient, an application 
 that would remind patient to exercise regularly and monitor the exercise done would help physiotherapist 

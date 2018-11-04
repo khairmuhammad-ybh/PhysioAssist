@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.fragmentsphysio.PhysioProgressBarGraph"
+    android:background="@drawable/fragment_layout_round_white_translucent"
+    android:layout_margin="30dp">
+
+    <ImageView
+        android:id="@+id/physio_progress_bar_graph_btn_back"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@drawable/btn_back_black_normal"
+        android:scaleType="fitXY"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/physio_schedule_bar_graph_btn_back_desc"/>
+
+    <TextView
+        android:id="@+id/physio_progress_bar_graph_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/physio_schedule_bar_graph_header"
+        android:textSize="40sp"
+        android:fontFamily="@font/caveatbrush_regular"
+        android:layout_below="@id/physio_progress_bar_graph_btn_back"
+        android:layout_marginStart="100dp"/>
+
+    <!-- TODO: View bar graph -->
+    <RelativeLayout
+        android:id="@+id/physio_progress_bar_graph_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp">
+
+        <!-- TODO: create bar graph #1 -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/physio_progress_bar_chart_one"
+            android:layout_width="400dp"
+            android:layout_height="220dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- TODO: create bar graph #2 -->
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/physio_progress_bar_chart_two"
+                android:layout_width="400dp"
+                android:layout_height="220dp"
+                android:layout_marginBottom="30dp"/>
+
+            <!-- TODO: create bar graph #3 -->
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/physio_progress_bar_chart_three"
+                android:layout_width="400dp"
+                android:layout_height="220dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

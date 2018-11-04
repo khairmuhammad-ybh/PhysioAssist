@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/exercise_thumbnail"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/exercise_thumbnail_desc"/>
+
+    <LinearLayout
+        android:id="@+id/infoSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/exercise_thumbnail"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/caveatbrush_regular"
+            android:text="@string/video_title"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btnStartExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnStartExercise"
+            android:background="@drawable/btn_start_video"
+            android:fontFamily="@font/caveatbrush_regular"
+            android:textColor="@color/colorBtnText"
+            android:textSize="12sp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
